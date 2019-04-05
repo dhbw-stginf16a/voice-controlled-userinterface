@@ -100,7 +100,7 @@ makes the use less stressfull since the user knows that his input is beeing
 recorded and processed. Such a feedback can be visual, auditorial and / or
 through vibrations.
 
-### How are the guidelines dependend on the software application?
+### How are the guidelines dependent on the software application?
 As mentioned above the application of the guidelines depend on the complexity
 and environemnt of the software application. Sometimes certain guidelines are
 more difficult to realize or even hinder certain features of the core
