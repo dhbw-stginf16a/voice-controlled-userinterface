@@ -1,0 +1,149 @@
+\documentclass[
+  10pt
+, handout
+]{beamer}
+
+\usepackage{pgfpages}
+
+% Use T1 Font encoding to support more glyphs
+\usepackage[T1]{fontenc}
+
+%\setbeameroption{show notes on second screen}
+
+% Number sections in table of contents
+\setbeamertemplate{section in toc}[sections numbered]
+% Hide subsections in table of contents
+\setcounter{tocdepth}{1}
+
+% Use metropolis beamer theme
+\usetheme[
+  numbering=fraction  % Page numbering like 3/10
+]{metropolis}
+\usepackage{appendixnumberbeamer}
+
+\usepackage{booktabs}
+\usepackage[scale=2]{ccicons}
+
+\usepackage{pgfplots}
+\usepgfplotslibrary{dateplot}
+
+\usepackage{xspace}
+\newcommand{\themename}{\textbf{\textsc{metropolis}}\xspace}
+
+\usepackage{graphicx}
+\usepackage{listings}
+
+\usepackage{lmodern}
+
+\usepackage{eurosym}
+\usepackage{amsmath, amssymb}
+\usepackage[binary-units=true]{siunitx}
+\DeclareSIUnit{\EUR}{\text{\euro}}
+
+\usepackage{xcolor}
+\newcommand\crule[3][black]{\textcolor{#1}{\rule{#2}{#3}}}
+\definecolor{aswe-reactive}{cmyk}{1,0.9,0,0}
+\definecolor{aswe-proactive}{cmyk}{0.6,0.9,0,0}
+\definecolor{aswe-preferences}{cmyk}{0,0.75,1,0}
+\definecolor{aswe-data}{cmyk}{0.85,0.1,1,0}
+
+% Content
+
+\title{Voice Controlled User-Interface}
+\subtitle{}
+\date{April 10, 2019}
+\author{Dorian Czichotzki, David Marchi, Daniel Schäfer}
+
+\begin{document}
+
+\maketitle
+
+\begin{frame}{Agenda}
+  \tableofcontents[pausesections]
+\end{frame}
+
+\section{How does speech recognition work?}
+
+\begin{frame}{How does speech recognition work?}
+  AI/ML
+\end{frame}
+
+\section{Which applications are suited for control via speech and which requirements are necessary?}
+
+\begin{frame}{Which applications are suited for control via speech and which requirements are necessary?}
+  \begin{itemize}
+    \item Personal voice assistant
+    \item Commands in the car (TODO specify better)
+  \end{itemize}
+\end{frame}
+
+\section{Advantages and disadvantages of speech controlled dialogs?}
+
+\begin{frame}{Voice controlled dialogs - Advantages}
+  Advantages
+
+  \begin{itemize}
+    \item Hands free, eyes free
+    \item No complex menu interaction
+    \item Quick fire and forget command
+    \item Could be capable of asking questions
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Speech controlled dialogs - Disadvantages}
+  Disadvantages
+
+  \begin{itemize}
+    \item Hard/impossible to enter non-word content
+    \item Low accuracy $\rightarrow$ High chance of not doing what you want
+    \item Often limited to a few predefined actions
+    \item Often robotic, unnatural commands necessary
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Speech controlled dialogs - No visuals}
+  No visuals
+
+  \begin{itemize}
+    \item Doesn't convey information unless it's talking right at this moment
+    \item Can't show multiple things at the same time
+    \item Is slower than visuals because you can't skip anything
+    \item If you missed something, you missed it
+  \end{itemize}
+\end{frame}
+
+\section{Guidelines}
+
+\begin{frame}{Guidelines - adapting existing guidelines}
+  \begin{itemize}
+    \item[{[.]}]<+-> Law of proximity (Objects closer together appear as a single unit)
+    \item[{[ ]}]<+-> Law of equality (Similar objects appear as a group)
+    \item[{[ ]}]<+-> Law of closedness (Closed structures are more recognizeable)
+    \item[{[ ]}]<+-> Law of continuity (Objects in a line or curve appear as single figure)
+    \item[{[x]}]<+-> Law of experience
+    \item[{[x]}]<+-> Law of same fate \\ (Objects moving in the same way appear as a group)
+    \item[{[x]}]<+-> Law of symmetry \\ (Objects that are arranged in symmetry are more easily recognizable)
+    \item[{[x]}]<+-> Law of simplicity (The brain simplifies complex shapes)
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Shneidermans 8 goldene Regeln (1-4)}
+  \begin{enumerate}
+    \item<+-> Versuche Konsistenz zu erreichen \\ $\rightarrow$ Gleiche Sprachanfragen sollten gleiche Aktionen hervorrufen
+    \item<+-> Biete erfahrenen Benutzern Abkürzungen an \\ $\rightarrow$ Spezielle Wörter, die man einstellen kann, die direkt eine komplexe Aktion aufrufen
+    \item<+-> Biete informatives Feedback \\ $\rightarrow$ Gutes TODO
+    \item<+-> Dialoge sollten abgeschlossen sein \\ $\rightarrow$ TODO
+  \end{enumerate}
+\end{frame}
+
+\begin{frame}{Shneidermans 8 goldene Regeln (5-8)}
+  \begin{enumerate}
+    \setcounter{enumi}{4}
+    \item<+-> Biete einfache Fehlerbehandlung \\ $\rightarrow$ TODO
+    \item<+-> Biete einfache Rücksetzmöglichkeiten (undo) \\ $\rightarrow$ TODO
+    \item<+-> Unterstütze benutzergesteuerten Dialog \\ $\rightarrow$ TODO
+    \item<+-> Reduziere die Belastung des Kurzzeitgedächtnisses \\ $\rightarrow$ Kurze Antworten
+  \end{enumerate}
+\end{frame}
+
+\end{document}
