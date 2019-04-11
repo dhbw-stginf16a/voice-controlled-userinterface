@@ -83,21 +83,22 @@
   Advantages
 
   \begin{itemize}
-    \item Hands free, eyes free
-    \item No complex menu interaction
-    \item Quick fire and forget command
-    \item Could be capable of asking questions
+    \item<1-> Hands free, eyes free
+    \item<2-> No complex menu interaction
+    \item<3-> Quick fire and forget command
+    \item<4-> Could be capable of asking questions
   \end{itemize}
+  \note[item]<2>{Like commandline but for voice}
 \end{frame}
 
 \begin{frame}{Speech controlled dialogs - Disadvantages}
   Disadvantages
 
   \begin{itemize}
-    \item Hard/impossible to enter non-word content
-    \item Low accuracy $\rightarrow$ High chance of not doing what you want
-    \item Often limited to a few predefined actions
-    \item Often robotic, unnatural commands necessary
+    \item<+-> Hard/impossible to enter non-word content
+    \item<+-> Low accuracy $\rightarrow$ High chance of not doing what you want
+    \item<+-> Often limited to a few predefined actions
+    \item<+-> Often robotic, unnatural commands necessary
   \end{itemize}
 \end{frame}
 
@@ -107,7 +108,7 @@
   \begin{itemize}
     \item Doesn't convey information unless it's talking right at this moment
     \item Can't show multiple things at the same time
-    \item Is slower than visuals because you can't skip anything
+    \item Is slower because you can't skip anything
     \item If you missed something, you missed it
   \end{itemize}
 \end{frame}
@@ -116,50 +117,65 @@
 
 \begin{frame}{Guidelines - Laws}
   \begin{itemize}
-    \item[{[.]}]<+-> Law of proximity \\ (Objects closer together appear as a single unit)
-    \item[{[ ]}]<+-> Law of equality \\ (Similar objects appear as a group)
-    \item[{[ ]}]<+-> Law of closedness \\ (Closed structures are more recognizeable)
-    \item[{[ ]}]<+-> Law of continuity \\ (Objects in a line or curve appear as single figure)
+    \item[{[.]}] Law of proximity
+    \item[{[ ]}] Law of equality
+    \item[{[ ]}] Law of closedness
+    \item[{[ ]}] Law of continuity
   \end{itemize}
+  \note[item]{Objects closer together appear as a single unit}
+  \note[item]{Similar objects appear as a group}
+  \note[item]{Closed structures are more recognizeable}
+  \note[item]{Objects in a line or curve appear as single figure}
 \end{frame}
 
 \begin{frame}{Guidelines - Laws}
   \begin{itemize}
-    \item[{[x]}]<+-> Law of experience
-    \item[{[x]}]<+-> Law of same fate \\ (Objects moving in the same way appear as a group)
-    \item[{[x]}]<+-> Law of symmetry \\ (Objects that are arranged in symmetry are more easily recognizable)
-    \item[{[x]}]<+-> Law of simplicity \\ (The brain simplifies complex shapes)
+    \item[{[x]}]<1-> Law of experience
+    \item[{[x]}]<2-> Law of same fate
+    \item[{[.]}]<3-> Law of symmetry
+    \item[{[x]}]<4-> Law of simplicity
   \end{itemize}
+  \note[item]<2->{Objects moving in the same way appear as a group}
+  \note[item]<3->{Objects that are arranged in symmetry are more easily recognizable}
+  \note[item]<4->{The brain simplifies complex shapes}
 \end{frame}
 
 \begin{frame}{Guidelines}
   \begin{itemize}
-    \item Nicht mehr als 3 Infos länger als 7s merken lassen
-    \\ $\rightarrow$  Nicht zu lange Antworten
-    \item Ablenkung minimieren \\ $\rightarrow$ Nur wichtiges sagen (keine Zeitverschwendung)
-    \item Langsame Antwortzeiten vermeiden
-    \item Fortschrittsanzeigen nutzen \\ $\rightarrow$ Bsp. Alexa blinkender Ring, wenn sie "nachdenkt"
-    \item Varianten zur Erledigung einer Aufgabe minimieren \\ $\rightarrow$ Anti-Guideline bei Sprache
-     % - sollte möglichst viele Wege geben etwas zu tun, da man sie nicht offensichtlich sieht
+    \item<+-> Nicht mehr als 3 Infos länger als 7s merken lassen \\
+              $\rightarrow$  Nicht zu lange Antworten
+    \item<+-> Ablenkung minimieren \\ $\rightarrow$ Nur wichtiges sagen (keine Zeitverschwendung)
+    \item<+-> Langsame Antwortzeiten vermeiden
+    \item<+-> Fortschrittsanzeigen nutzen \\ $\rightarrow$ Bsp. Alexa blinkender Ring, wenn sie "nachdenkt"
+    \item<+-> Varianten zur Erledigung einer Aufgabe minimieren \\ $\rightarrow$ Anti-Guideline bei Sprache
   \end{itemize}
+   \note[item]{Möglichst viele Wege, da nicht offensichtlich sieht}
 \end{frame}
 
 \begin{frame}{Shneidermans 8 goldene Regeln (1-4)}
   \begin{enumerate}
-    \item<+-> Versuche Konsistenz zu erreichen \\ $\rightarrow$ Gleiche Sprachanfragen sollten gleiche Aktionen hervorrufen
-    \item<+-> Biete erfahrenen Benutzern Abkürzungen an \\ $\rightarrow$ Spezielle Wörter, die man einstellen kann, die direkt eine komplexe Aktion aufrufen
-    \item<+-> Biete informatives Feedback \\ $\rightarrow$ Gutes TODO
-    \item<+-> Dialoge sollten abgeschlossen sein \\ $\rightarrow$ TODO
+    \item<+-> Versuche Konsistenz zu erreichen \\
+              $\rightarrow$ Gleiche Sprachanfragen, gleiche Aktionen
+    \item<+-> Biete erfahrenen Benutzern Abkürzungen an \\
+              $\rightarrow$ Eigene Befehle
+    \item<+-> Biete informatives Feedback \\
+              $\rightarrow$ Ring, "Did you mean?"
+    \item<+-> Dialoge sollten abgeschlossen sein \\
+              $\rightarrow$ TODO
   \end{enumerate}
 \end{frame}
 
 \begin{frame}{Shneidermans 8 goldene Regeln (5-8)}
   \begin{enumerate}
     \setcounter{enumi}{4}
-    \item<+-> Biete einfache Fehlerbehandlung \\ $\rightarrow$ TODO
-    \item<+-> Biete einfache Rücksetzmöglichkeiten (undo) \\ $\rightarrow$ TODO
-    \item<+-> Unterstütze benutzergesteuerten Dialog \\ $\rightarrow$ TODO
-    \item<+-> Reduziere die Belastung des Kurzzeitgedächtnisses \\ $\rightarrow$ Kurze Antworten
+    \item<+-> Biete einfache Fehlerbehandlung \\
+              $\rightarrow$ z.b. Kaufbestätigung
+    \item<+-> Biete einfache Rücksetzmöglichkeiten (undo) \\
+              $\rightarrow$ "Stop!"
+    \item<+-> Unterstütze benutzergesteuerten Dialog \\
+              $\rightarrow$ Flexibler Dialog
+    \item<+-> Reduziere die Belastung des Kurzzeitgedächtnisses \\
+              $\rightarrow$ Kurze Antworten
   \end{enumerate}
 \end{frame}
 
