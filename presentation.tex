@@ -64,16 +64,51 @@
 
 \section{How does speech recognition work?}  % Dorian
 
-\begin{frame}{How does speech recognition work?}
-  AI/ML
+\begin{frame}{General purpose speech recognition}
+  \begin{itemize}
+      \item Hidden Markov Model transforms spectral information into observations
+      \item Observations can be mapped to phoneme or words \\
+        $\rightarrow$ 44 phoneme in English language
+      \item Words are build up of a sequence of phoneme
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Deep recurrent neural networks}
+  \begin{itemize}
+      \item Large vocabulary speech recognition \\
+        $\rightarrow$ English language has more than 1mio. words
+        \item Uses raw wave data to analyze time sequences
+        \item Results in higher accuracy
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{End-to-End automatic speech recognition}
+    \begin{itemize}
+        \item Usually offered as a service due to high compute demand
+        \item Employs language and pronunciation models to reason about input
+        \item Future: Attention based models learn pronunciation and language models
+    \end{itemize}
 \end{frame}
 
 \section{Suited Applications and Requirements}  % Dorian
 
-\begin{frame}{Which applications are suited for control via speech and which requirements are necessary?}
+\begin{frame}{What applications are suited for voice control}
   \begin{itemize}
     \item Personal voice assistant
-    \item Commands in the car (TODO specify better)
+    \item In-car systems \\
+        $\rightarrow$ Navigation or telephone controls
+    \item Telephony automation \\
+        $\rightarrow$ Call center support
+    \item People with disabilities \\
+        $\rightarrow$ Deaf telephony
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Which requirements make voice control necessary?}
+  \begin{itemize}
+    \item Other means of control are not available
+    \item Users attention is needed for other systems \\
+        $\rightarrow$ e.g. Fighter jets
   \end{itemize}
 \end{frame}
 
