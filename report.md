@@ -101,24 +101,41 @@ Shneidermans 8 goldene Regeln
 How easy is it to:
 -die Funktion des Systems zu erkennen? (Ziel)
 -die ausführbaren Aktionen zu bestimmen? (Intentionen)
+-deren Abbildung auf Aktionen zu ermitteln? (Aktionssequenz)
+- die Aktionssequenz auszuführen? (Ausführung)-den Systemzustand zu erkennen? (Wahrnehmung)-diesen auf eine Interpretation abzubilden? (Interpretation)
+-zu entscheiden, ob der gewünschte Zustand erreicht wurde? (Vergleich)
 
-deren Abbildung auf Aktionen zu ermitteln? (Aktionssequenz)•die Aktionssequenz auszuführen? (Ausführung)•den Systemzustand zu erkennen? (Wahrnehmung)•diesen auf eine Interpretation abzubilden? (Interpretation)•zu entscheiden, ob der gewünschte Zustand erreicht wurde? (Vergleich)
+Sichtbarkeit
+  - Zustand & Aktionen erkennbar
 
-Voice controlled interfaces should be able to parse and recognize commands in
-different scenarios. Often times people use different fill words, sentence
-strucutures and orders of actions to express a desired will. Depending on the
-complexity of the interface and its commands this guideline is more or less
-appliciable, but even in cases of high complexity voice controlled interfaces
-some basic commands will be available to which this guideline can apply to.
-Furthermore a feedback from the interface, when it is listening and when not,
-makes the use less stressfull since the user knows that his input is beeing
-recorded and processed. Such a feedback can be visual, auditorial and / or
-through vibrations.
+Gutes konzeptionelles Modell
+  - konsistente Präsentation von Operationen und Ergebnissen
+  - kohärentes „Bild“ des Systems im Kopf des Benutzers
+Gute (natürliche) Abbildungen 
+  - zwischen Aktionen und Ergebnissen
+  - Bedienelementen und Auswirkungen
+  - Systemzustand und Sichtbarem
+Gutes Feedback
+  - über Ergebnis der Handlungen (Auswirkungen, komplett und kontinuierlich
+
+
+Ort - Modus - Weg
+- Where am I?
+- What can I do here?
+- How did I get here?
+- Where can I go and how?
+
+- Bandbreite ist geringer
 
 ### How are the guidelines dependent on the software application?
 
-
-
+- degree of user
+  - beginner, advanced
+- enviroment and context
+  - special trained speech recognition
+- integrate with other interactive systems
+  - more powefull
+  - visual clues
 
 As mentioned above the application of the guidelines depend on the complexity
 and environemnt of the software application. Sometimes certain guidelines are
