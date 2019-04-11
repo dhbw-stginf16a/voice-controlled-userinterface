@@ -5,4 +5,4 @@ presentation.pdf: presentation.tex
 
 clean:
 	latexmk -C
-	rm -f presentation.bbl presentation.run.xml
+	rm -f presentation.bbl presentation.run.xml presentation.nav presentation.snm latexmk_log.txt
