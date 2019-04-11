@@ -89,6 +89,21 @@ Shneidermans 8 goldene Regeln
   - Repetiton
 
 ### Which additional guidelines for designing interactive voice controlled systems do you recommend?
+
+- very strictly tied to language
+  - chinese electric vehicle example (galileo report)
+
+- manual
+ - even more important
+
+ - tonfolge beim Verbindungsaufbau
+
+How easy is it to:
+-die Funktion des Systems zu erkennen? (Ziel)
+-die ausführbaren Aktionen zu bestimmen? (Intentionen)
+
+deren Abbildung auf Aktionen zu ermitteln? (Aktionssequenz)•die Aktionssequenz auszuführen? (Ausführung)•den Systemzustand zu erkennen? (Wahrnehmung)•diesen auf eine Interpretation abzubilden? (Interpretation)•zu entscheiden, ob der gewünschte Zustand erreicht wurde? (Vergleich)
+
 Voice controlled interfaces should be able to parse and recognize commands in
 different scenarios. Often times people use different fill words, sentence
 strucutures and orders of actions to express a desired will. Depending on the
@@ -101,6 +116,10 @@ recorded and processed. Such a feedback can be visual, auditorial and / or
 through vibrations.
 
 ### How are the guidelines dependent on the software application?
+
+
+
+
 As mentioned above the application of the guidelines depend on the complexity
 and environemnt of the software application. Sometimes certain guidelines are
 more difficult to realize or even hinder certain features of the core
